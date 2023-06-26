@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsIm5hbWUiOiJGZXJkeSBhaG1hZCIsImVtYWlsIjoiZmVyZHlAZ21haWwuY29tIiwiaWF0IjoxNjg3NjE2MjE0LCJleHAiOjE2ODc2MTYyNzR9.bGF6u1JWrcfogLyHtaV8gVwx24fmzJDPWJZrWjulVmQ
+
+###
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Ferdy ahmad",
+    "email": "ferdy@gmail.com", 
+    "password": "12345678",
+    "confpassword": "12345678"
+}
+
+###
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "ferdy@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET   http://localhost:5000/token
+
+
+### 
+DELETE http://localhost:5000/logout
